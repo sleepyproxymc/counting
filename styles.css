@@ -76,17 +76,25 @@ body::before {
 .features h3{margin-bottom:18px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
 
-/* Updated features boxes to match premium style */
-.features article {
+/* FEATURES BOXES - match premium style and hover effect */
+.features article,
+.premium .card {
   background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
   padding: 18px;
   border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.features article:hover,
+.premium .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(143,122,230,0.3);
+}
+
 .features h4{margin-top:0}
 
 /* PREMIUM */
 .premium{padding:40px 0}
-.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent); padding:18px;border-radius:12px}
 
 /* SUPPORT */
 .support{padding:40px 0;text-align:center}
