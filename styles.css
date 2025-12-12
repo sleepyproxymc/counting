@@ -1,102 +1,13 @@
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: "Inter", sans-serif;
-}
+// Replace these with your real API endpoints later
+const stats = {
+servers: 128,
+users: 50291,
+highscore: 98322
+};
 
 
-body {
-background: #141118;
-color: white;
-text-align: center;
-padding: 30px;
-}
-
-
-header {
-margin-bottom: 40px;
-}
-
-
-.logo {
-width: 140px;
-margin-bottom: 15px;
-}
-
-
-h1 {
-font-size: 3rem;
-font-weight: 700;
-}
-
-
-p {
-color: #cfcfcf;
-}
-
-
-.stats {
-display: flex;
-justify-content: center;
-gap: 25px;
-margin-top: 40px;
-flex-wrap: wrap;
-}
-
-
-.stat-card {
-background: #1c1622;
-padding: 25px 40px;
-border-radius: 20px;
-box-shadow: 0 0 20px rgba(0,0,0,0.25);
-min-width: 180px;
-}
-
-
-.stat-card h2 {
-font-size: 2.5rem;
-margin-bottom: 5px;
-}
-
-
-.buttons {
-margin-top: 50px;
-display: flex;
-justify-content: center;
-gap: 20px;
-flex-wrap: wrap;
-}
-
-
-.btn {
-padding: 14px 28px;
-border-radius: 10px;
-text-decoration: none;
-font-size: 1.1rem;
-font-weight: 600;
-color: white;
-background: #2a2233;
-transition: 0.25s;
-}
-
-
-.btn:hover {
-opacity: 0.8;
-}
-
-
-.primary {
-background: #7a4bff;
-}
-
-
-.secondary {
-background: #3c2f47;
-}
-
-
-footer {
-margin-top: 60px;
-color: #7d7d7d;
-}
+window.onload = () => {
+document.getElementById("servers").textContent = stats.servers;
+document.getElementById("users").textContent = stats.users.toLocaleString();
+document.getElementById("highscore").textContent = stats.highscore;
+};
