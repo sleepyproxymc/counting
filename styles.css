@@ -1,13 +1,80 @@
-// Replace these with your real API endpoints later
-const stats = {
-servers: 128,
-users: 50291,
-highscore: 98322
-};
+<style>
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background: #0f0e13;
+color: #ffffff;
+text-align: center;
+}
 
 
-window.onload = () => {
-document.getElementById("servers").textContent = stats.servers;
-document.getElementById("users").textContent = stats.users.toLocaleString();
-document.getElementById("highscore").textContent = stats.highscore;
-};
+.header {
+padding: 40px 0;
+}
+
+
+.logo {
+width: 120px;
+margin-bottom: 10px;
+}
+
+
+h1 {
+font-size: 2.5rem;
+margin: 0;
+}
+
+
+.tagline {
+margin-top: 5px;
+opacity: 0.75;
+}
+
+
+main {
+max-width: 800px;
+margin: 0 auto;
+padding: 20px;
+}
+
+
+.info-section,
+.features-section {
+margin: 40px 0;
+}
+
+
+.features-section ul {
+list-style: none;
+padding: 0;
+}
+
+
+.features-section li {
+padding: 5px 0;
+opacity: 0.9;
+}
+
+
+.links-section {
+display: flex;
+justify-content: center;
+gap: 15px;
+flex-wrap: wrap;
+margin: 40px 0;
+}
+
+
+.button {
+padding: 12px 20px;
+background: #251e30;
+border-radius: 8px;
+color: white;
+text-decoration: none;
+font-weight: 600;
+transition: 0.2s;
+}
+
+
+.button:hover {
+</style>
