@@ -7,39 +7,43 @@
 <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<header>
-<img src="logo.png" alt="Counting Logo" class="logo" />
+<header class="header">
+<img src="logo.png" alt="Logo" class="logo" />
 <h1>Counting Bot</h1>
-<p>The most advanced counting bot for Discord.</p>
+<p class="tagline">The cleanest, fastest Discord counting bot.</p>
 </header>
 
 
-<section class="stats">
-<div class="stat-card">
-<h2 id="servers">0</h2>
-<p>Servers</p>
-</div>
-<div class="stat-card">
-<h2 id="users">0</h2>
-<p>Total Users</p>
-</div>
-<div class="stat-card">
-<h2 id="highscore">0</h2>
-<p>Global Highscore</p>
-</div>
+<main>
+<section class="info-section">
+<h2>What is Counting Bot?</h2>
+<p>
+Counting Bot tracks your server's counting channel flawlessly — no lag, no issues,
+just perfect counting.
+</p>
 </section>
 
 
-<section class="buttons">
-<a href="https://discord.com/api/oauth2/authorize?client_id=YOUR_ID&permissions=8&scope=bot%20applications.commands" class="btn primary">Invite Bot</a>
-<a href="https://counting.lol/support" class="btn secondary">Support Server</a>
-<a href="https://counting.lol" class="btn" id="website-btn">Website</a>
+<section class="features-section">
+<h2>Features</h2>
+<ul>
+<li>Automatic number tracking</li>
+<li>Error detection and corrections</li>
+<li>Global leaderboard</li>
+<li>Simple setup & clean interface</li>
+</ul>
 </section>
 
 
-<footer>
-<p>© 2025 Counting Bot • Built with ❤️</p>
-</footer>
+<section class="links-section">
+<a class="button" href="https://counting.lol/invite">Invite Bot</a>
+<a class="button" href="https://counting.lol/support">Support Server</a>
+<a class="button" href="https://counting.lol">Website</a>
+</section>
+</main>
+
+
+<footer class="footer">© 2025 Counting Bot</footer>
 
 
 <script src="script.js"></script>
